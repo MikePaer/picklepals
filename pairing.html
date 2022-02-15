@@ -4,7 +4,7 @@
     <head>
 
         <meta charset="utf-8" />
-        <title>Secret Santa Pairing</title>
+        <title>St. Pickle's Day Gift Exchange</title>
 
         <script src="vendors/Lodash-3.10.1.js"></script>
         <script src="vendors/Cryptojs.aes-3.1.2.js"></script>
@@ -25,7 +25,7 @@
             }
 
             body {
-                background: url(./assets/snow.png), url(./assets/santa.png), url(./assets/snow.png), radial-gradient(#FB3B3B, #EF3D3D);
+                background: url(./assets/pickle.gif), url(./assets/santa.png), url(./assets/pickle.gif), radial-gradient(#01411a, #02800c);
                 background-repeat: repeat, no-repeat, repeat, no-repeat;
 
                 animation-name: snow;
@@ -33,7 +33,7 @@
                 animation-iteration-count: infinite;
                 animation-timing-function: linear;
 
-                font-family: 'Comic Sans MS';
+                font-family: 'Segoe UI', 'Arial', sans-serif;
             }
 
             @keyframes snow {
@@ -77,8 +77,8 @@
                     #5CC48A 30px,
                     #FFFFFF 30px,
                     #FFFFFF 60px,
-                    #EF3D3D 60px,
-                    #EF3D3D 90px,
+                    #8def3d 60px,
+                    #8def3d 90px,
                     #FFFFFF 90px,
                     #FFFFFF 120px
                 );
@@ -146,8 +146,7 @@
 
             <div class="wrapper">
                 <div class="content">
-
-                    <div class="title">Hi <span id="name"></span>! You've been paired with</div>
+                    <div class="title">Hi <span id="name"></span>! Your pickle pal is</div>
                     <script>document.getElementById('name').innerText = name</script>
 
                     <div class="pairing">
@@ -164,20 +163,12 @@
                         </script>
                     </div>
 
-                    <div class="title">Good luck!</div>
-
-                    <script>
-                        if (queryString.extra) {
-                            document.write('<iframe class="affiliate" src="http://rcm-eu.amazon-adsystem.com/e/cm?t=secrsant02e-21&o=8&p=48&l=ur1&category=books&banner=10DQAXJ7D1D2VTXMR682&f=ifr" width="728" height="90" scrolling="no" border="0" marginwidth="0" frameborder="0"></iframe>');
-                        }
-                    </script>
-
                 </div>
             </div>
-
+<!-- 
             <a href="http://arcanis.github.io/secretsanta/" class="spirit-of-christmas">
                 Want to start your own Secret Santa with your friends? Click here to get started!
-            </a>
+            </a> -->
 
         </div>
 
