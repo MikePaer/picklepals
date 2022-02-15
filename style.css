@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+
+.main {
+    margin: 0;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 0;
+}
+h1 {
+    font-size: 5vw;
+    text-align: left;
+    margin: 4vw auto;
+}
+
+h2 {
+    font-size: 4vw;
+}
+
+h3 {
+    font-size: 3vw;
+}
+
+body {
+    background-image: url(./assets/pickle.gif);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
+}
+
+p {
+    font-size: 2vw;
+    margin: 4vw auto;
+}
+
+.main {
+    display: flex;
+}
+
+.part {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+
+    flex: 1;
+}
+
+.instructions {
+    margin: auto 10%;
+}
+
+li {
+    margin: 10px auto;
+}
+
+strong {
+    color: #096e09;
+}
+
+.btn-container {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+
+.btn-container a {
+    color: #097509;
+    text-decoration: none;
+    padding: 20px;
+    border: 1px solid #0cb50c;
+    border-radius: 10px;
+    background-color: #aaffaa;
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+.btn-container a:hover {
+    background-color: #e3ffe3;
+}
+
+.input {
+    display: block;
+    align-self: stretch;
+
+    width: 100%;
+    flex: auto;
+
+    border: 10px solid #0cb50c;
+    border-radius: 10px;
+
+    padding: 15px;
+
+    background-color: rgba(255, 255, 255, 0.7);
+    outline: none;
+}
+
+.generate {
+    display: block;
+
+    margin-top: 20px;
+
+    flex: none;
+    height: 100px;
+
+    border: 10px solid #0cb50c;
+    border-radius: 10px;
+
+    font-family: inherit;
+    font-size: 40px;
+
+    background-color: #ea1212;
+    color: #ffffff;
+}
+
+.generate:focus {
+    border-color: #e6e020;
+
+    outline: none;
+}
+
+.result {
+    margin-top: 20px;
+
+    flex: none;
+
+    border: 10px solid #e6e020;
+    border-radius: 10px;
+
+    padding: 15px;
+
+    background: #ffffff;
+}
+
+.result a {
+    color: blue;
+}
+
+.result.none {
+    display: none;
+}
+
+.result.error {
+    border-color: #ea1212;
+
+    color: #ea1212;
+}
+
+.result-table {
+    table-layout: fixed;
+
+    width: 100%;
+}
+
+.result-name {
+    width: 30%;
+
+    padding: 5px 8px;
+}
+
+.result-link {
+    width: 100%;
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
